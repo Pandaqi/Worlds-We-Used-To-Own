@@ -1,0 +1,18 @@
+
+/* RESCALING POLYGONS */
+var arr = (array here)
+var cp = [50, 5]; (center point used for scaling)
+var scale = 1.5;
+
+for(var i = 0; i < arr.length; i += 2) {
+	arr[i] -= cp[0];
+	arr[i+1] -= cp[1];
+
+	arr[i] *= scale;
+	arr[i+1] *= scale;
+
+	arr[i] += cp[0];
+	arr[i+1] += cp[1];
+}
+
+console.log(arr)
